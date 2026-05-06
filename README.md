@@ -53,9 +53,7 @@
 
 ### 🐍 Contribution Snake
 
-<div align="center">
-  <img src="https://github.com/ViniciusMicarelli/ViniciusMicarelli/blob/output/github-contribution-grid-snake.svg" />
-</div>
+![snake animation](https://raw.githubusercontent.com/ViniciusMicarelli/ViniciusMicarelli/output/github-contribution-grid-snake2.svg)
 
 ---
 
