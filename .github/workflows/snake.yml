@@ -1,0 +1,24 @@
+name: Generate snake game
+
+on:
+  schedule:
+    - cron: "* */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: Sutil/snk@master
+        with:
+          github_user_name: ViniciusMicarelli
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          snake_color: '#00FFAA'
+
+      - uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
